@@ -53,14 +53,14 @@ def browser_fixture(context, **kwargs):
 def before_all(context):
     context.data_storage = DataStorage()
     for formatter in context._runner.formatters:
-       if formatter.name == "html-pretty":
-          context.formatter = formatter
-       if "html" in formatter.name:
-          context.html_formatter = formatter
+        if formatter.name == "html-pretty":
+            context.formatter = formatter
+        if "html" in formatter.name:
+            context.html_formatter = formatter
 
 
 def before_scenario(context, scenario):
-    pass
+    context.config.userdata['my_input_runner_tag']=context.tags
     # use_fixture(browser_fixture, context, driver=scenario)
 
 
@@ -70,9 +70,8 @@ def after_scenario(context, scenario):
     # embed_screenshot(context, caption="Screenshot")
 
 
-
-    
-
-
 def after_all(context):
-    pass
+    tags= context.config.userdata['my_input_runner_tag']
+    if "input" in tags:
+        data = dict(context.data_storage.data_dict)
+        CsvUtil().write_to_csv(data, context.config.userdata['csv_file_path'])

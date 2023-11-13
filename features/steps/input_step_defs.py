@@ -18,9 +18,7 @@ def step_impl(context, data, unique_key):
 
 @then(u'the user stores date with unique key {unique_key} in file {file_name}')
 def step_save_data(context, unique_key, file_name):
-    data = dict(context.data_storage.data_dict)
-    CsvUtil().write_to_csv(data, file_name)
-
+    pass
 
 @given(u'the user checks previously stored data for unique key {unique_key} in the file {file_name}')
 def step_impl(context, unique_key, file_name):
