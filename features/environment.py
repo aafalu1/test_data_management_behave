@@ -50,10 +50,20 @@ def browser_fixture(context, **kwargs):
     quit_driver(context)
 
 
+def initialize_csv_data(context):
+    # Initialize CsvUtil object with the CSV file path
+    csv_util = CsvUtil('data.csv')
+
+    # Read data from the CSV file into the data_dict
+    csv_util.read_csv_to_dataframe()
+
+    # Store the CsvUtil object in the context object
+    context.csv_util = csv_util
+
+
 def before_all(context):
     context.data_storage = DataStorage()
-    excel_data = CsvUtil.read_excel_file("test_data.xlsx")
-    context.excel_data = excel_data
+    initialize_csv_data(context)
     for formatter in context._runner.formatters:
         if formatter.name == "html-pretty":
             context.formatter = formatter
@@ -62,7 +72,7 @@ def before_all(context):
 
 
 def before_scenario(context, scenario):
-    context.config.userdata['my_input_runner_tag']=context.tags
+    context.config.userdata['my_input_runner_tag'] = context.tags
     # use_fixture(browser_fixture, context, driver=scenario)
 
 
@@ -73,7 +83,7 @@ def after_scenario(context, scenario):
 
 
 def after_all(context):
-    tags= context.config.userdata['my_input_runner_tag']
+    tags = context.config.userdata['my_input_runner_tag']
     if "input" in tags:
         data = dict(context.data_storage.data_dict)
-        CsvUtil().write_to_csv(data, context.config.userdata['csv_file_path'])
+        context.csv_util.write_to_csv(data)

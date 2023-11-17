@@ -1068,20 +1068,20 @@ function download_embed(id, filename) {
   <body onload="body_onload();">
     <div class="feature-title flex-gap">
       <span>Feature: Read data from website and store each data into a CSV file</span>
-      <span class="feature-started">Started: 16-11-2023 10:08:31</span>
+      <span class="feature-started">Started: 16-11-2023 19:00:29</span>
       <span class="button flex-left-space" data-next-value="dark" data-value="auto" id="dark_mode_toggle" onclick="toggle_dark_mode()">Dark mode</span>
       <span class="button" id="high_contrast" onclick="toggle_hash('high_contrast')">High contrast toggle</span>
       <span class="button" id="summary" onclick="toggle_hash('summary')">Summary</span>
     </div>
     <div class="feature-summary-container flex-gap collapse" id="f1">
       <div class="feature-summary-stats ">
-        <div class="feature-summary-row passed">Passed: 0</div>
+        <div class="feature-summary-row passed">Passed: 5</div>
         <div class="feature-summary-row failed">Failed: 1</div>
       </div>
       <div class="feature-summary-stats flex-left-space">
-        <div class="feature-summary-row">Started: 16-11-2023 10:08:31</div>
-        <div class="feature-summary-row">Duration: 0.00</div>
-        <div class="feature-summary-row">Finished: 16-11-2023 10:08:31</div>
+        <div class="feature-summary-row">Started: 16-11-2023 19:00:29</div>
+        <div class="feature-summary-row">Duration: 0.04</div>
+        <div class="feature-summary-row">Finished: 16-11-2023 19:00:29</div>
       </div>
       <div class="feature-summary-stats">
         <span class="button display-block" onclick="expander('expand_all', this)">Expand All</span>
@@ -1096,7 +1096,7 @@ function download_embed(id, filename) {
       </div>
     </div>
     <div class="feature-container" id="f1">
-      <div class="scenario-header failed " id="f1-s1-h">
+      <div class="scenario-header passed " id="f1-s1-h">
         <div class="scenario-tags">
           <span>@validation</span>
         </div>
@@ -1105,10 +1105,230 @@ function download_embed(id, filename) {
         </div>
         <div class="scenario-info">
           <div class="scenario-name" id="f1-s1" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A001-2056 in file data.csv is correct -- @1.1 </div>
+          <div class="scenario-duration">Scenario duration: 0.02s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule passed " id="f1-s1-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A001-2056 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.02s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header passed " id="f1-s2-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s2" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A002-2045 in file data.csv is correct -- @1.2 </div>
           <div class="scenario-duration">Scenario duration: 0.00s</div>
         </div>
       </div>
-      <div class="scenario-capsule failed " id="f1-s1-c">
+      <div class="scenario-capsule passed " id="f1-s2-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A002-2045 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header passed " id="f1-s3-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s3" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A0034-2098 in file data.csv is correct -- @1.3 </div>
+          <div class="scenario-duration">Scenario duration: 0.00s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule passed " id="f1-s3-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A0034-2098 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header passed " id="f1-s4-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s4" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A056-2045 in file data.csv is correct -- @1.4 </div>
+          <div class="scenario-duration">Scenario duration: 0.01s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule passed " id="f1-s4-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A056-2045 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.01s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header passed " id="f1-s5-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s5" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A078-2088 in file data.csv is correct -- @1.5 </div>
+          <div class="scenario-duration">Scenario duration: 0.00s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule passed " id="f1-s5-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A078-2088 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header failed " id="f1-s6-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s6" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A078-2099 in file data.csv is correct -- @1.6 </div>
+          <div class="scenario-duration">Scenario duration: 0.00s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule failed " id="f1-s6-c">
         <div class="step-capsule skipped ">
           <div class="step-status">SKIP</div>
           <div class="step-decorator">
@@ -1123,26 +1343,26 @@ function download_embed(id, filename) {
           <div class="step-status">FAIL</div>
           <div class="step-decorator">
             <b><i>Given </i></b>
-            <span>the user checks previously stored data for unique key A001-2056 in the file data.csv</span>
+            <span>the user checks previously stored data for unique key A078-2099 in the file data.csv</span>
           </div>
           <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space">features/steps/input_step_defs.py:23</span>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
         </div>
         <div class="embeds">
           <div class="messages">
             <div class="embed-capsule">
-              <div class="embed_button collapse" id="embed_button_f9fd" onclick="toggle_hash('f9fd')">Error Message</div>
-              <pre class="embed_content collapse" id="embed_f9fd"><span>Traceback (most recent call last):
+              <div class="embed_button collapse" id="embed_button_f75b" onclick="toggle_hash('f75b')">Error Message</div>
+              <pre class="embed_content collapse" id="embed_f75b"><span>Traceback (most recent call last):
   File &quot;D:\vs_code_workspace\youtube_learning\.venv\Lib\site-packages\behave\model.py&quot;, line 1329, in run
     match.run(runner.context)
   File &quot;D:\vs_code_workspace\youtube_learning\.venv\Lib\site-packages\behave\matchers.py&quot;, line 98, in run
     self.func(context, *args, **kwargs)
-  File &quot;features\steps\input_step_defs.py&quot;, line 25, in step_impl
-    filtered_data = CsvUtil().read_from_csv(file_name, unique_key)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;D:\vs_code_workspace\youtube_learning\features\utility\csv_util.py&quot;, line 51, in read_from_csv
-    raise ValueError(
-ValueError: CSV data not initialized. Call initialize_csv_data first.
+  File &quot;features\steps\input_step_defs.py&quot;, line 26, in step_impl
+    data = context.csv_util.get_data_by_key(unique_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;D:\vs_code_workspace\youtube_learning\features\utility\csv_util.py&quot;, line 44, in get_data_by_key
+    raise KeyNotFoundError(f&quot;Key '{key}' not found in the {
+features.utility.csv_util.KeyNotFoundError: Key 'A078-2099' not found in the D:\vs_code_workspace\youtube_learning\test_data\data.csv file.
 </span></pre>
             </div>
           </div>

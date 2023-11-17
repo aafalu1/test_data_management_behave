@@ -20,12 +20,9 @@ def step_impl(context, data, unique_key):
 def step_save_data(context, unique_key, file_name):
     pass
 
+
 @given(u'the user checks previously stored data for unique key {unique_key} in the file {file_name}')
 def step_impl(context, unique_key, file_name):
-     filtered_data = [
-        item for item in context.excel_data if item.get('Unique ID') == unique_key
-    ]
-     if not filtered_data:
-      raise KeyNotFoundError(f"Key '{key}' not found in the Excel data.")
-     return filtered_data
-    p
+    data = context.csv_util.get_data_by_key(unique_key)
+    print(f"unque key {unique_key} has data {data}")
+    assert data is not None, f"Data for unique id '{unique_key}' not found"
