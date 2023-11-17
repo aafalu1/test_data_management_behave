@@ -1,6 +1,6 @@
 from behave import *
 
-from features.utility.csv_util import CsvUtil
+from features.utility.csv_util import CsvUtil, KeyNotFoundError
 
 
 @given(u'the user navigates to the website and retrieves data')
@@ -22,5 +22,10 @@ def step_save_data(context, unique_key, file_name):
 
 @given(u'the user checks previously stored data for unique key {unique_key} in the file {file_name}')
 def step_impl(context, unique_key, file_name):
-    filtered_data = CsvUtil().read_from_csv(file_name, unique_key)
-    print(f"{filtered_data}")
+     filtered_data = [
+        item for item in context.excel_data if item.get('Unique ID') == unique_key
+    ]
+     if not filtered_data:
+      raise KeyNotFoundError(f"Key '{key}' not found in the Excel data.")
+     return filtered_data
+    p

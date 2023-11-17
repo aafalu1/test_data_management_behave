@@ -52,6 +52,8 @@ def browser_fixture(context, **kwargs):
 
 def before_all(context):
     context.data_storage = DataStorage()
+    excel_data = CsvUtil.read_excel_file("test_data.xlsx")
+    context.excel_data = excel_data
     for formatter in context._runner.formatters:
         if formatter.name == "html-pretty":
             context.formatter = formatter

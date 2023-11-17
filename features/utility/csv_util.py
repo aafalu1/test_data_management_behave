@@ -1,48 +1,34 @@
 import pandas as pd
 import os
-from typing import Mapping, Any
-
-from file_handler import File_Handler
-
-
-class KeyNotFoundError(Exception):
-    pass
 
 
 class CsvUtil:
+    def __init__(self, csv_file_path):
+        self.csv_file_path = csv_file_path
+        self.data_dict = {}
 
-    @staticmethod
-    def write_to_csv(data_dict: Mapping[str, Any], csv_file_path: str, append=False):
-        csv_dir = File_Handler().create_directory_on_project_root("test_data")
-        file_path = os.path.join(csv_dir, csv_file_path)
-        if not os.path.isfile(file_path):
-            raise ValueError(f"{file_path} is not a valid file path.")
-        new_df = pd.DataFrame(list(data_dict.items()),
-                              columns=['Unique ID', 'Data'])
+        # Load CSV data into the data_dict
+        if os.path.isfile(csv_file_path):
+            with open(csv_file_path, 'r') as f:
+                lines = f.readlines()
+                for line in lines:
+                    unique_id, data = line.strip().split(',')
+                    self.data_dict[unique_id] = data
 
-        if os.path.exists(file_path) and not append:
-            # If file exists and append is False, overwrite the file with new data
-            df = new_df
-        else:
-            df = pd.read_csv(file_path) if os.path.exists(
-                csv_file_path) else pd.DataFrame(columns=['Unique ID', 'Data'])
-            df = pd.concat([df, new_df], ignore_index=True, sort=False)
+    def add_data(self, unique_id, data):
+        self.data_dict[unique_id] = data
 
-        df.to_csv(file_path, index=False,
-                  mode='w' if not append else 'a', header=True)
+        # Write the updated data to the CSV file
+        with open(self.csv_file_path, 'w') as f:
+            for unique_id, data in self.data_dict.items():
+                f.write(f"{unique_id},{data}\n")
 
-    @staticmethod
-    def read_from_csv(csv_file_path: str, key: str):
-        file_path = File_Handler().generate_file_path(
-            "test_data", file_name=csv_file_path)
-        try:
-            df = pd.read_csv(file_path)
-            filtered_data = df[df['Unique ID']
-                               == key].to_dict(orient='records')
-            if not filtered_data:
-                raise KeyNotFoundError(
-                    f"Key '{key}' not found in the CSV file.")
-            return filtered_data
-        except pd.errors.EmptyDataError:
-            # Handle the case where the file is empty
-            return []
+    def get_data(self, unique_id):
+        return self.data_dict.get(unique_id, None)
+
+    def clear_data(self):
+        self.data_dict = {}
+
+        # Clear the CSV file
+        if os.path.isfile(self.csv_file_path):
+            os.remove(self.csv_file_path)
