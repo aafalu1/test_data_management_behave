@@ -1067,22 +1067,21 @@ function download_embed(id, filename) {
   </head>
   <body onload="body_onload();">
     <div class="feature-title flex-gap">
-      <span>Feature: showing off behave</span>
-      <span class="feature-started">Started: 12-11-2023 21:09:28</span>
+      <span>Feature: Read data from website and store each data into a CSV file</span>
+      <span class="feature-started">Started: 16-11-2023 19:00:29</span>
       <span class="button flex-left-space" data-next-value="dark" data-value="auto" id="dark_mode_toggle" onclick="toggle_dark_mode()">Dark mode</span>
       <span class="button" id="high_contrast" onclick="toggle_hash('high_contrast')">High contrast toggle</span>
       <span class="button" id="summary" onclick="toggle_hash('summary')">Summary</span>
     </div>
     <div class="feature-summary-container flex-gap collapse" id="f1">
       <div class="feature-summary-stats ">
-        <div class="feature-summary-row passed">Passed: 0</div>
-        <div class="feature-summary-row failed">Failed: 0</div>
-        <div class="feature-summary-row untested">Untested: 1</div>
+        <div class="feature-summary-row passed">Passed: 5</div>
+        <div class="feature-summary-row failed">Failed: 1</div>
       </div>
       <div class="feature-summary-stats flex-left-space">
-        <div class="feature-summary-row">Started: 12-11-2023 21:09:28</div>
-        <div class="feature-summary-row">Duration: 0.00</div>
-        <div class="feature-summary-row">Finished: 12-11-2023 21:09:28</div>
+        <div class="feature-summary-row">Started: 16-11-2023 19:00:29</div>
+        <div class="feature-summary-row">Duration: 0.04</div>
+        <div class="feature-summary-row">Finished: 16-11-2023 19:00:29</div>
       </div>
       <div class="feature-summary-stats">
         <span class="button display-block" onclick="expander('expand_all', this)">Expand All</span>
@@ -1097,411 +1096,19 @@ function download_embed(id, filename) {
       </div>
     </div>
     <div class="feature-container" id="f1">
-      <div class="scenario-header untested " id="f1-s1-h">
-        <div class="scenario-tags">
-          <span>@SmokeTest</span>
-        </div>
-        <div class="scenario-info">
-          <div class="scenario-name" id="f1-s1" onclick="expand_this_only(this)">Scenario: run a simple test</div>
-          <div class="scenario-duration">Scenario duration: 0.00s</div>
-        </div>
-      </div>
-      <div class="scenario-capsule untested " id="f1-s1-c">
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Before </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Given </i></b>
-            <span>we have behave installed</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>When </i></b>
-            <span>we implement a test</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Then </i></b>
-            <span>behave will test it for us!</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>After </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-      </div>
-    </div>
-    <div class="feature-title flex-gap">
-      <span>Feature: Read data from website and store each data into a CSV file</span>
-      <span class="feature-started">Started: 12-11-2023 21:09:28</span>
-    </div>
-    <div class="feature-summary-container flex-gap collapse" id="f2">
-      <div class="feature-summary-stats ">
-        <div class="feature-summary-row passed">Passed: 1</div>
-        <div class="feature-summary-row failed">Failed: 0</div>
-        <div class="feature-summary-row untested">Untested: 5</div>
-      </div>
-      <div class="feature-summary-stats flex-left-space">
-        <div class="feature-summary-row">Started: 12-11-2023 21:09:28</div>
-        <div class="feature-summary-row">Duration: 0.01</div>
-        <div class="feature-summary-row">Finished: 12-11-2023 21:09:28</div>
-      </div>
-      <div class="feature-summary-stats">
-        <span class="button display-block" onclick="expander('expand_all', this)">Expand All</span>
-        <span class="button display-block" onclick="expander('collapse_all', this)">Collapse All</span>
-        <span class="button display-block" onclick="expander('expand_all_failed', this)">Expand All Failed</span>
-      </div>
-      <div class="feature-additional-info-container" id="additional-info">
-        <div class="feature-additional-info">
-          <div class="feature-additional-info-row tester">tester: worker1</div>
-          <div class="feature-additional-info-row location">location: lab2</div>
-        </div>
-      </div>
-    </div>
-    <div class="feature-container" id="f2">
-      <div class="scenario-header untested " id="f2-s1-h">
-        <div class="scenario-tags">
-          <span>@input</span>
-        </div>
-        <div class="scenario-info">
-          <div class="scenario-name" id="f2-s1" onclick="expand_this_only(this)">Scenario: User retrieves &lt;data &gt;from website for a unique ID &lt;unique_id&gt; and saves it in file data.csv -- @1.1 </div>
-          <div class="scenario-duration">Scenario duration: 0.00s</div>
-        </div>
-      </div>
-      <div class="scenario-capsule untested " id="f2-s1-c">
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Before </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Given </i></b>
-            <span>the user navigates to the website and retrieves data</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>And </i></b>
-            <span>the user reads and stores test data 6542347 for A001-2056</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Then </i></b>
-            <span>the user stores date with unique key A001-2056 in file data.csv</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>After </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-      </div>
-      <div class="scenario-header untested " id="f2-s2-h">
-        <div class="scenario-tags">
-          <span>@input</span>
-        </div>
-        <div class="scenario-info">
-          <div class="scenario-name" id="f2-s2" onclick="expand_this_only(this)">Scenario: User retrieves &lt;data &gt;from website for a unique ID &lt;unique_id&gt; and saves it in file data.csv -- @1.2 </div>
-          <div class="scenario-duration">Scenario duration: 0.00s</div>
-        </div>
-      </div>
-      <div class="scenario-capsule untested " id="f2-s2-c">
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Before </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Given </i></b>
-            <span>the user navigates to the website and retrieves data</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>And </i></b>
-            <span>the user reads and stores test data 6542617 for A002-2066</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Then </i></b>
-            <span>the user stores date with unique key A002-2066 in file data.csv</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>After </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-      </div>
-      <div class="scenario-header untested " id="f2-s3-h">
-        <div class="scenario-tags">
-          <span>@input</span>
-        </div>
-        <div class="scenario-info">
-          <div class="scenario-name" id="f2-s3" onclick="expand_this_only(this)">Scenario: User retrieves &lt;data &gt;from website for a unique ID &lt;unique_id&gt; and saves it in file data.csv -- @1.3 </div>
-          <div class="scenario-duration">Scenario duration: 0.00s</div>
-        </div>
-      </div>
-      <div class="scenario-capsule untested " id="f2-s3-c">
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Before </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Given </i></b>
-            <span>the user navigates to the website and retrieves data</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>And </i></b>
-            <span>the user reads and stores test data 6542332 for A001-2098</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Then </i></b>
-            <span>the user stores date with unique key A001-2098 in file data.csv</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>After </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-      </div>
-      <div class="scenario-header untested " id="f2-s4-h">
-        <div class="scenario-tags">
-          <span>@input</span>
-        </div>
-        <div class="scenario-info">
-          <div class="scenario-name" id="f2-s4" onclick="expand_this_only(this)">Scenario: User retrieves &lt;data &gt;from website for a unique ID &lt;unique_id&gt; and saves it in file data.csv -- @1.4 </div>
-          <div class="scenario-duration">Scenario duration: 0.00s</div>
-        </div>
-      </div>
-      <div class="scenario-capsule untested " id="f2-s4-c">
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Before </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Given </i></b>
-            <span>the user navigates to the website and retrieves data</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>And </i></b>
-            <span>the user reads and stores test data 65890332 for A001-2045</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Then </i></b>
-            <span>the user stores date with unique key A001-2045 in file data.csv</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>After </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-      </div>
-      <div class="scenario-header untested " id="f2-s5-h">
-        <div class="scenario-tags">
-          <span>@input</span>
-        </div>
-        <div class="scenario-info">
-          <div class="scenario-name" id="f2-s5" onclick="expand_this_only(this)">Scenario: User retrieves &lt;data &gt;from website for a unique ID &lt;unique_id&gt; and saves it in file data.csv -- @1.5 </div>
-          <div class="scenario-duration">Scenario duration: 0.00s</div>
-        </div>
-      </div>
-      <div class="scenario-capsule untested " id="f2-s5-c">
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Before </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Given </i></b>
-            <span>the user navigates to the website and retrieves data</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>And </i></b>
-            <span>the user reads and stores test data 654772132 for A004-2088</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped ">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>Then </i></b>
-            <span>the user stores date with unique key A004-2088 in file data.csv</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-        <div class="step-capsule skipped margin-top">
-          <div class="step-status">SKIP</div>
-          <div class="step-decorator">
-            <b><i>After </i></b>
-            <span>scenario</span>
-          </div>
-          <div class="step-duration">(0.00s)</div>
-          <span class="flex-left-space"></span>
-        </div>
-        <div class="embeds"></div>
-      </div>
-      <div class="scenario-header passed " id="f2-s6-h">
+      <div class="scenario-header passed " id="f1-s1-h">
         <div class="scenario-tags">
           <span>@validation</span>
         </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
         <div class="scenario-info">
-          <div class="scenario-name" id="f2-s6" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID &lt;unique_id&gt; in file data.csv is correct -- @1.1 </div>
-          <div class="scenario-duration">Scenario duration: 0.01s</div>
+          <div class="scenario-name" id="f1-s1" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A001-2056 in file data.csv is correct -- @1.1 </div>
+          <div class="scenario-duration">Scenario duration: 0.02s</div>
         </div>
       </div>
-      <div class="scenario-capsule passed " id="f2-s6-c">
+      <div class="scenario-capsule passed " id="f1-s1-c">
         <div class="step-capsule skipped ">
           <div class="step-status">SKIP</div>
           <div class="step-decorator">
@@ -1518,10 +1125,248 @@ function download_embed(id, filename) {
             <b><i>Given </i></b>
             <span>the user checks previously stored data for unique key A001-2056 in the file data.csv</span>
           </div>
-          <div class="step-duration">(0.01s)</div>
-          <span class="flex-left-space">features/steps/input_step_defs.py:23</span>
+          <div class="step-duration">(0.02s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
         </div>
         <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header passed " id="f1-s2-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s2" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A002-2045 in file data.csv is correct -- @1.2 </div>
+          <div class="scenario-duration">Scenario duration: 0.00s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule passed " id="f1-s2-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A002-2045 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header passed " id="f1-s3-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s3" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A0034-2098 in file data.csv is correct -- @1.3 </div>
+          <div class="scenario-duration">Scenario duration: 0.00s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule passed " id="f1-s3-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A0034-2098 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header passed " id="f1-s4-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s4" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A056-2045 in file data.csv is correct -- @1.4 </div>
+          <div class="scenario-duration">Scenario duration: 0.01s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule passed " id="f1-s4-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A056-2045 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.01s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header passed " id="f1-s5-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s5" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A078-2088 in file data.csv is correct -- @1.5 </div>
+          <div class="scenario-duration">Scenario duration: 0.00s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule passed " id="f1-s5-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule passed margin-top">
+          <div class="step-status">PASS</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A078-2088 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule skipped margin-top">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>After </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+      </div>
+      <div class="scenario-header failed " id="f1-s6-h">
+        <div class="scenario-tags">
+          <span>@validation</span>
+        </div>
+        <div class="scenario-tags">
+          <span>@csv_data</span>
+        </div>
+        <div class="scenario-info">
+          <div class="scenario-name" id="f1-s6" onclick="expand_this_only(this)">Scenario: User validates that the saved data for unique ID A078-2099 in file data.csv is correct -- @1.6 </div>
+          <div class="scenario-duration">Scenario duration: 0.00s</div>
+        </div>
+      </div>
+      <div class="scenario-capsule failed " id="f1-s6-c">
+        <div class="step-capsule skipped ">
+          <div class="step-status">SKIP</div>
+          <div class="step-decorator">
+            <b><i>Before </i></b>
+            <span>scenario</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space"></span>
+        </div>
+        <div class="embeds"></div>
+        <div class="step-capsule failed margin-top">
+          <div class="step-status">FAIL</div>
+          <div class="step-decorator">
+            <b><i>Given </i></b>
+            <span>the user checks previously stored data for unique key A078-2099 in the file data.csv</span>
+          </div>
+          <div class="step-duration">(0.00s)</div>
+          <span class="flex-left-space">features/steps/input_step_defs.py:24</span>
+        </div>
+        <div class="embeds">
+          <div class="messages">
+            <div class="embed-capsule">
+              <div class="embed_button collapse" id="embed_button_f75b" onclick="toggle_hash('f75b')">Error Message</div>
+              <pre class="embed_content collapse" id="embed_f75b"><span>Traceback (most recent call last):
+  File &quot;D:\vs_code_workspace\youtube_learning\.venv\Lib\site-packages\behave\model.py&quot;, line 1329, in run
+    match.run(runner.context)
+  File &quot;D:\vs_code_workspace\youtube_learning\.venv\Lib\site-packages\behave\matchers.py&quot;, line 98, in run
+    self.func(context, *args, **kwargs)
+  File &quot;features\steps\input_step_defs.py&quot;, line 26, in step_impl
+    data = context.csv_util.get_data_by_key(unique_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;D:\vs_code_workspace\youtube_learning\features\utility\csv_util.py&quot;, line 44, in get_data_by_key
+    raise KeyNotFoundError(f&quot;Key '{key}' not found in the {
+features.utility.csv_util.KeyNotFoundError: Key 'A078-2099' not found in the D:\vs_code_workspace\youtube_learning\test_data\data.csv file.
+</span></pre>
+            </div>
+          </div>
+        </div>
         <div class="step-capsule skipped margin-top">
           <div class="step-status">SKIP</div>
           <div class="step-decorator">

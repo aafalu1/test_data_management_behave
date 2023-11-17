@@ -7,4 +7,4 @@ def run_pytest_with_html_report(tag):
 
 
 # Example usage: Call the function to execute the pytest command with the @smoketest tag
-run_pytest_with_html_report("validation")
+run_pytest_with_html_report("@csv_data")
